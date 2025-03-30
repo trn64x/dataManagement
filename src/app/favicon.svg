@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="37.123001mm"
+   height="37.123108mm"
+   viewBox="0 0 37.123001 37.123108"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="36.946327"
+       y="24.57196"
+       width="147.9621"
+       height="83.792152"
+       id="rect54" />
+    <rect
+       x="0"
+       y="20.565945"
+       width="150.79315"
+       height="117.46726"
+       id="rect3" />
+    <rect
+       x="4.0305119"
+       y="5.5807085"
+       width="141.62852"
+       height="143.90417"
+       id="rect2" />
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g59">
+      <rect
+         style="fill:#4bb651;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="rect4"
+         width="37.123001"
+         height="37.123104"
+         x="0"
+         y="0"
+         ry="0" />
+      <g
+         id="g54"
+         transform="matrix(0.94745054,0,0,0.94745054,0.97539684,0.23551041)">
+        <g
+           id="g4"
+           transform="matrix(0.82594029,0,0,0.82594029,5.4086185,8.1456077)"
+           style="stroke-width:0.999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none">
+          <text
+             xml:space="preserve"
+             transform="matrix(0.27100945,0,0,0.27100945,-4.3588895,17.74883)"
+             id="text2"
+             style="font-size:20.8275px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#f9f9f9;stroke-width:3.68622;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none"
+             x="59.208"
+             y="0"><tspan
+               x="6.1139349"
+               y="24.530503"
+               id="tspan10"><tspan
+                 style="font-weight:bold;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono Bold';text-align:center;text-anchor:middle"
+                 id="tspan3">eksabajt.pl</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             transform="matrix(0.25872165,0,0,0.25872165,-3.1569081,22.400668)"
+             id="text3"
+             style="font-size:8px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:none;fill:#f9f9f9;stroke-width:3.86129;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none"
+             x="1450.9084"
+             y="0"><tspan
+               x="10.596443"
+               y="27.845408"
+               id="tspan12"><tspan
+                 style="font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';text-align:center;text-anchor:middle"
+                 id="tspan11">Profesjonalne rozwiązania, 
+</tspan></tspan><tspan
+               x="29.796455"
+               y="37.845408"
+               id="tspan14"><tspan
+                 style="font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';text-align:center;text-anchor:middle"
+                 id="tspan13">w przystępnej cenie</tspan></tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(0.33326014,0,0,0.33326014,-18.406288,-3.5994171)"
+           id="text54"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;font-family:'Noto Sans Mono';-inkscape-font-specification:'Noto Sans Mono';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect54);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.88976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-opacity:1"><tspan
+             x="62.927732"
+             y="73.098913"
+             id="tspan16"><tspan
+               style="font-weight:bold;-inkscape-font-specification:'Noto Sans Mono Bold';fill:#ffffff"
+               id="tspan15">&lt;/&gt;</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
