@@ -12,7 +12,8 @@
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-awesome-reveal": "^4.3.1",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-wavify": "^1.11.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
