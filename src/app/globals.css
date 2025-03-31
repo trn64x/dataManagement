@@ -19,13 +19,35 @@
   }
 }
 
-body {
-  background-image: url("/grid/grid.png");
-  background-size: 4vh;
-  background-position: center;
+@keyframes grid-background {
+  0% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  50% {
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+  100% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+}
+
+.grid {
+  transition: scale 500ms;
   image-rendering: pixelated;
+  background-repeat: repeat;
+  background-image: url("/grid/grid.png");
+  background-size: 3.5vh;
+  background-position: center;
   background-attachment: fixed;
-  background-blend-mode: color-burn;
+  filter: invert(0.5) blur(0px);
+  opacity: 0.025;
+  z-index: -10;
+}
+
+body {
   background-color: var(--background);
   color: var(--foreground);
 }
