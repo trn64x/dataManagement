@@ -19,17 +19,20 @@ import {
 import { Input } from "@/components/ui/input";
 
 import {contactFormSchema} from "@/schemas/contactFormSchema";
-import { useCallback, useState } from "react";
-import { Loader2 } from "lucide-react";
+import { useCallback, useMemo, useState } from "react";
+import { FileWarning, Loader2, MailWarningIcon } from "lucide-react";
 
 
 const useContact = () => {
   const [message,setMessage] = useState("Skontaktuj się!");
   const [loading,setLoading] = useState(false);
+  const [statusCode, setStatusCode] = useState(200);
+
+  const isOK = useMemo(()=>statusCode==200,[statusCode])
 
   const onSubmit = useCallback(async (data: any) => {
     setLoading(true)
-    const req = await fetch('/api/contact', {
+    const res = await fetch('/api/contact', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -37,14 +40,14 @@ const useContact = () => {
       },
       body: JSON.stringify(data)
     })
-
-    const json = await req.json();
+    const json = await res.json();
+    setStatusCode(res.status)
     setMessage(json.message)
     setLoading(false)
 
-  },[setMessage,setLoading]);
+  },[setMessage,setLoading,setStatusCode]);
 
-  return {onSubmit,loading,message}
+  return {onSubmit,loading,message,statusCode, isOK}
 }
 
 export default function Contact() {
@@ -57,7 +60,7 @@ export default function Contact() {
     },
   });
 
-  const {message, loading, onSubmit} = useContact()
+  const {message, loading,statusCode, isOK, onSubmit} = useContact()
 
   return (
     <>
@@ -135,7 +138,7 @@ export default function Contact() {
                 />
                 <div className="flex flex-row ">
                   <div className="flex items-center justify-start w-8/10">
-                    {loading ? <Loader2 className="spin"/> : <p>{message}</p>}
+                    {loading ? <Loader2 className="animate-spin"/> : <p className={!isOK ? "flex-row flex gap-2 font-bold" : ""}>{!isOK && <MailWarningIcon/>} {message}</p>}
                   </div>
                   <div className="flex items-center justify-end w-2/10">
                     <Button className="w-32" type="submit">

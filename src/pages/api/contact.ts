@@ -19,7 +19,7 @@ type ResponseData = {
 const apiLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minut
     max: 5, // 5 wiadomości 
-    message: '{"message": "Too many requests, try again later."}',
+    message: '{"message": "Spróbuj ponownie później..."}',
   });
 
 export default function handler(
@@ -66,11 +66,11 @@ export default function handler(
           }
         )
         if(!ok){
-          res.status(500).json({message:"Error while sending the message"});
+          res.status(500).json({message:"Błąd podczas wysyłania wiadomości"});
           return
         }
 
-        res.status(200).json({ message: "Message sent succesfully..."})
+        res.status(200).json({ message: "Pomyślnie wysłano..."})
     });
 
  }
