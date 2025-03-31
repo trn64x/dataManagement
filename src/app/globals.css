@@ -30,6 +30,19 @@
   --foreground-secondary: rgba(55, 65, 81, 1);
 }
 
+.grid {
+  transition: scale 500ms;
+  image-rendering: pixelated;
+  background-repeat: repeat;
+  background-image: url("/grid/grid.png");
+  background-size: 3.5vh;
+  background-position: center;
+  background-attachment: fixed;
+  filter: invert(0.5) blur(0px);
+  opacity: 0.025;
+  z-index: -10;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
