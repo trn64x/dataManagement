@@ -44,7 +44,6 @@
   filter: invert(0.5) blur(0px);
   opacity: 0.025;
   z-index: -10;
-  animation: grid-background 180s linear infinite;
 }
 
 body {
