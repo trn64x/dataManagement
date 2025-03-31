@@ -20,12 +20,12 @@
 }
 
 .grid{
-  background-image: url("/grid/grid.png");
-  background-size: 4vh;
-  background-position: center;
   image-rendering: pixelated;
+  background-image: url("/grid/grid.png");
+  background-size: 3vh;
+  background-position: center;
   background-attachment: fixed;
-  filter:invert(0.5);
+  filter:invert(0.5) blur(0px);
   opacity: 0.05;
   z-index: -10;
 }
