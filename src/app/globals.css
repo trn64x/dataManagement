@@ -1,5 +1,7 @@
 @import "tailwindcss";
-*{
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
   transition: 200ms background-color, 200ms color;
 }
 :root {
@@ -15,7 +17,7 @@
 }
 
 :root {
-  --background: rgba(249, 250, 251, 1); 
+  --background: rgba(249, 250, 251, 1);
   --background-secondary: rgba(18, 18, 18, 1);
   --foreground: rgb(29, 29, 29);
   --foreground-secondary: rgba(243, 244, 246, 1);

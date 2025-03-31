@@ -46,7 +46,7 @@ export default function Home() {
           </Fade>
         </ul>
         <Fade delay={5500}>
-          <CtaButton>Skontaktuj się z nami!</CtaButton>
+          <CtaButton />
         </Fade>
       </main>
       <Wave fill="url(#gradient)">
