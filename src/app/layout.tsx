@@ -27,7 +27,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="grid fixed top-0 left-0 w-full h-full"></div>
         <main className="flex-1 flex gap-2 flex-col">{children}</main>
       </body>
     </html>

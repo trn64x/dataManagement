@@ -1,3 +1,4 @@
+import GridBackground from "@/components/background/GridBackground";
 import CtaButton from "@/components/buttons/CtaButton";
 import Header from "@/components/header/Header";
 import TextGradient from "@/components/text/TextGradient";
@@ -7,6 +8,7 @@ import Wave from "react-wavify";
 export default function Home() {
   return (
     <>
+      <GridBackground />
       <Header />
       <main className="font-sans gap-8 p-8 flex flex-col gap-4 min-h-[80vh] items-center justify-center">
         <div className="flex flex-row gap-4 text-5xl">

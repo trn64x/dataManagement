@@ -19,15 +19,32 @@
   }
 }
 
-.grid{
+@keyframes grid-background {
+  0% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  50% {
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+  100% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+}
+
+.grid {
   image-rendering: pixelated;
+  background-repeat: repeat;
   background-image: url("/grid/grid.png");
-  background-size: 3vh;
+  background-size: 3.5vh;
   background-position: center;
   background-attachment: fixed;
-  filter:invert(0.5) blur(0px);
-  opacity: 0.05;
+  filter: invert(0.5) blur(0px);
+  opacity: 0.025;
   z-index: -10;
+  animation: grid-background 180s linear infinite;
 }
 
 body {
