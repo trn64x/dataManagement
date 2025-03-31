@@ -19,13 +19,18 @@
   }
 }
 
-body {
+.grid{
   background-image: url("/grid/grid.png");
   background-size: 4vh;
   background-position: center;
   image-rendering: pixelated;
   background-attachment: fixed;
-  background-blend-mode: color-burn;
+  filter:invert(0.5);
+  opacity: 0.05;
+  z-index: -10;
+}
+
+body {
   background-color: var(--background);
   color: var(--foreground);
 }
