@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+*{
+  transition: 200ms background-color, 200ms color;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,26 +14,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: rgb(12, 12, 12);
-    --foreground: #ededed;
-  }
+:root {
+  --background: rgba(249, 250, 251, 1); 
+  --background-secondary: rgba(18, 18, 18, 1);
+  --foreground: rgb(29, 29, 29);
+  --foreground-secondary: rgba(243, 244, 246, 1);
+  --buttons: rgba(250, 204, 21, 1);
+  --border-color: rgba(209, 213, 219, 1);
 }
 
-@keyframes grid-background {
-  0% {
-    background-position-x: 0;
-    background-position-y: 0;
-  }
-  50% {
-    background-position-x: 50%;
-    background-position-y: 50%;
-  }
-  100% {
-    background-position-x: 0;
-    background-position-y: 0;
-  }
+.dark {
+  --background: rgba(18, 18, 18, 1);
+  --background-secondary: rgba(249, 250, 251, 1);
+  --foreground: rgba(243, 244, 246, 1);
+  --foreground-secondary: rgba(55, 65, 81, 1);
 }
 
 .grid {
