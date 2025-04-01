@@ -1,5 +1,5 @@
 @import "tailwindcss";
-*{
+* {
   transition: 200ms background-color;
 }
 :root {
@@ -14,9 +14,8 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
 :root {
-  --background: rgba(249, 250, 251, 1); 
+  --background: rgba(249, 250, 251, 1);
   --background-secondary: rgba(18, 18, 18, 1);
   --foreground: rgb(29, 29, 29);
   --foreground-secondary: rgba(243, 244, 246, 1);
@@ -47,4 +46,13 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.wave {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 40%,
+    #4bb651 40%,
+    #4bb651 100%
+  );
 }
