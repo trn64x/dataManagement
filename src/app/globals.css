@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+* {
+  transition: 200ms background-color, 200ms color;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
