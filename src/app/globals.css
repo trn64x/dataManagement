@@ -1,5 +1,5 @@
 @import "tailwindcss";
-* {
+body {
   transition: 200ms background-color;
 }
 :root {
@@ -30,6 +30,14 @@
   --foreground-secondary: rgba(55, 65, 81, 1);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark):not(.light) {
+    --background: rgba(18, 18, 18, 1);
+    --background-secondary: rgba(249, 250, 251, 1);
+    --foreground: rgba(243, 244, 246, 1);
+    --foreground-secondary: rgba(55, 65, 81, 1);
+  }
+}
 .grid {
   transition: scale 500ms;
   image-rendering: pixelated;
