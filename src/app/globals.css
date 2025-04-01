@@ -1,6 +1,6 @@
 @import "tailwindcss";
 *{
-  transition: 200ms background-color, 200ms color;
+  transition: 200ms background-color;
 }
 :root {
   --background: #ffffff;
@@ -13,6 +13,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
 
 :root {
   --background: rgba(249, 250, 251, 1); 
