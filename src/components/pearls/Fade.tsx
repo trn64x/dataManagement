@@ -2,5 +2,5 @@
 import { FadeProps } from "react-awesome-reveal";
 
 export default function FadeDecorator(props: FadeProps) {
-  return <div>{props.children}</div>;
+  return <div className={props.className}>{props.children}</div>;
 }

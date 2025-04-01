@@ -1,7 +1,6 @@
 "use client";
 
 import TextGradient from "@/components/text/TextGradient";
-import { Fade } from "react-awesome-reveal";
 import { Textarea } from "@/components/ui/textarea";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -22,6 +21,7 @@ import { contactFormSchema } from "@/schemas/contactFormSchema";
 import { useCallback, useMemo, useState } from "react";
 import { Loader2, MailIcon, MailWarningIcon, Send } from "lucide-react";
 import { Label } from "../ui/label";
+import Fade from "../pearls/Fade";
 
 const useContact = () => {
   const [message, setMessage] = useState("Skontaktuj się!");
