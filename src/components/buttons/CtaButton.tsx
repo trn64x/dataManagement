@@ -7,7 +7,7 @@ type CtaButtonProps = {
   text?:string;
 };
 
-export default function CtaButton({ className,text, full = true }: CtaButtonProps) {
+export default function CtaButton({ className, text, full = true }: CtaButtonProps) {
   return (
     <a href="#contact">
       <button
