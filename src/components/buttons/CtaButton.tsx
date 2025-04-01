@@ -4,10 +4,14 @@ import { twMerge } from "tailwind-merge";
 type CtaButtonProps = {
   className?: string;
   full?: boolean;
-  text?:string;
+  text?: string;
 };
 
-export default function CtaButton({ className, text, full = true }: CtaButtonProps) {
+export default function CtaButton({
+  className,
+  text,
+  full = true,
+}: CtaButtonProps) {
   return (
     <a href="#contact">
       <button
@@ -16,8 +20,8 @@ export default function CtaButton({ className, text, full = true }: CtaButtonPro
           className
         )}
       >
-        <MailPlus  />
-        {full && <p>{text || "Skontaktuj się z nami" }</p>}
+        <MailPlus />
+        {full && <p>{text || "Skontaktuj się z nami"}</p>}
       </button>
     </a>
   );
