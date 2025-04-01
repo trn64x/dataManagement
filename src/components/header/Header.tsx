@@ -1,7 +1,6 @@
 "use client";
 
 import { useMediaQuery } from "react-responsive";
-import CtaButton from "../buttons/CtaButton";
 import { ThemeToggle } from "../buttons/ThemeToggle";
 import useLiftOff from "../hooks/useLiftOff";
 import { Code2 } from "lucide-react";
@@ -9,7 +8,6 @@ import ContactIconButton from "../buttons/ContactIconButton";
 
 export default function Header() {
   const { liftOff } = useLiftOff();
-  const isDesktop = useMediaQuery({ minWidth: 896 });
   const isMobile = useMediaQuery({ maxWidth: 384 });
 
   return (
@@ -30,7 +28,7 @@ export default function Header() {
       </a>
       <div className="flex flex-row gap-1">
         <ThemeToggle />
-        <ContactIconButton/>
+        <ContactIconButton />
       </div>
     </div>
   );
