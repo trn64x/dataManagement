@@ -5,6 +5,7 @@ import CtaButton from "../buttons/CtaButton";
 import { ThemeToggle } from "../buttons/ThemeToggle";
 import useLiftOff from "../hooks/useLiftOff";
 import { Code2 } from "lucide-react";
+import ContactIconButton from "../buttons/ContactIconButton";
 
 export default function Header() {
   const { liftOff } = useLiftOff();
@@ -13,7 +14,7 @@ export default function Header() {
 
   return (
     <div
-      className={` transition-all flex-row flex items-center justify-between sticky top-0 left-0 z-10 w-full  dark:border-stone-800 border-stone-300 p-2  border-b-0 ${
+      className={` transition-all flex-row flex items-center justify-between sticky top-0 left-0 z-10 w-full  dark:border-stone-800 border-stone-300 p-4  border-b-0 ${
         liftOff
           ? "dark:bg-stone-800/40 bg-stone-100/40 backdrop-blur-sm border-b-1"
           : ""
@@ -27,9 +28,9 @@ export default function Header() {
           {!isMobile && <span>eksabajt.pl</span>}
         </div>
       </a>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-1">
         <ThemeToggle />
-        <CtaButton full={isDesktop} className="text-sm p-1 p-2 border-0" />
+        <ContactIconButton/>
       </div>
     </div>
   );
