@@ -1,6 +1,7 @@
 import GridBackground from "@/components/background/GridBackground";
 import CtaButton from "@/components/buttons/CtaButton";
 import Header from "@/components/header/Header";
+import Review from "@/components/review/review";
 import TextGradient from "@/components/text/TextGradient";
 import { Fade } from "react-awesome-reveal";
 import Wave from "react-wavify";
@@ -57,6 +58,7 @@ export default function Home() {
           </linearGradient>
         </defs>
       </Wave>
+      <Review/>
     </>
   );
 }
