@@ -1,16 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
-body {
-  transition: 200ms background-color;
-}
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -51,44 +41,13 @@ body {
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-:root {
-  --background: rgba(249, 250, 251, 1);
-  --background-secondary: rgba(18, 18, 18, 1);
-  --foreground: rgb(29, 29, 29);
-  --foreground-secondary: rgba(243, 244, 246, 1);
-  --buttons: rgba(250, 204, 21, 1);
-  --border-color: rgba(209, 213, 219, 1);
-}
-
-.dark {
-  --background: rgba(18, 18, 18, 1);
-  --background-secondary: rgba(249, 250, 251, 1);
-  --foreground: rgba(243, 244, 246, 1);
-  --foreground-secondary: rgba(55, 65, 81, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.dark):not(.light) {
-    --background: rgba(18, 18, 18, 1);
-    --background-secondary: rgba(249, 250, 251, 1);
-    --foreground: rgba(243, 244, 246, 1);
-    --foreground-secondary: rgba(55, 65, 81, 1);
-  }
-}
-.grid {
-  transition: scale 500ms;
-  image-rendering: pixelated;
-  background-repeat: repeat;
-  background-image: url("/grid/grid.png");
-  background-size: 3.5vh;
-  background-position: center;
-  background-attachment: fixed;
-  filter: invert(0.5) blur(0px);
-  opacity: 0.025;
-  z-index: -10;
-}
-
 body {
+  background-image: url("/grid/grid.png");
+  background-size: 4vh;
+  background-position: center;
+  image-rendering: pixelated;
+  background-attachment: fixed;
+  background-blend-mode: color-burn;
   background-color: var(--background);
 }
 
@@ -173,13 +132,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.wave {
-  background-image: linear-gradient(
-    transparent 0%,
-    transparent 40%,
-    #4bb651 40%,
-    #4bb651 100%
-  );
 }
