@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 export default function useLiftOff(threshold = 50) {
   const [scrollTop, setScrollTop] = useState(0);
 
-  const liftOff = useMemo(() => scrollTop > threshold, [scrollTop]);
+  const liftOff = useMemo(() => scrollTop > threshold, [scrollTop, threshold]);
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

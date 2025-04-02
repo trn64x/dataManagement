@@ -23,7 +23,10 @@ const useMouse = () => {
     const mouseMoveHandler = (event: MouseEvent) => {
       const { clientX, clientY, target } = event;
       setHover(false);
-      if (target && INTERACTABLES.includes(target.tagName)) {
+      if (
+        target &&
+        INTERACTABLES.includes((event.target as HTMLInputElement).tagName)
+      ) {
         setHover(true);
       }
       setX(clientX);
