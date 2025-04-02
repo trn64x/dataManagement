@@ -21,7 +21,7 @@ useEffect(()=>{
 },[responding])
 useEffect(()=>{
     setjsonList(jsonFile);
-    console.log("boom")
+    console.log("boom");
 }
 ,[responding])
 
