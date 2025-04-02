@@ -1,17 +1,17 @@
 [
     {
-        "name": "Stary syna",
-        "content":"Napisałem w formularzu żeby Synek skoczył po piwo, rano wstaje i jest, życie jest piękne, polecam z całego serca",
+        "name": "Karol",
+        "content":"Świetna firma! Strona jest estetyczna, funkcjonalna i działa bez zarzutu. Bardzo szybka realizacja i profesjonalne podejście. Polecam!",
+        "stars": 5
+    },
+    {
+        "name": "Anna",
+        "content":"Jestem zadowolona z usług. Strona wygląda świetnie i działa płynnie. Świetny kontakt i pełne wsparcie na każdym etapie.",
         "stars": 5
     },
     {
         "name": "Adam",
-        "content":"Strona jest taka jak sobie ją wyobrażałem, szybko dostałem gotowy projekt, natomiast realizacja przeszła moje oczekiwania",
-        "stars": 5
-    },
-    {
-        "name": "Jerzy",
-        "content":"Japierdole, ale szambo, strona się ładuje przez minutę tylko po to by nic nie działało, bardzo polecam :)",
+        "content":"Profesjonalna obsługa, szybka realizacja i świetna jakość. Strona dokładnie taka, jak chciałem. Polecam!",
         "stars":5
     }
 ]
