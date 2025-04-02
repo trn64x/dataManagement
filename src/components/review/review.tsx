@@ -12,7 +12,7 @@ const arrays = (stars:number) => {
 
     return( 
 <>
-<div className="min-h-[400px] w-screen">
+<div className="min-h-[400px] w-max">
     
     <div className="h-[100px] flex justify-center items-center text-5xl mad-sm:text-base max-md:text-2xl max-lg:text-4xl font-black"><div className="pb-2 mr-[10px] text-5xl max-sm:text-xl max-md:text-2xl max-lg:text-4xl">Co myślą o nas</div>  <TextGradient>
               {" "}
